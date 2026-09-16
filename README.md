@@ -5,12 +5,13 @@ Kubernetes and Linux drills on your own machine.
 
 ## Install
 
-    brew install BGilleran522/kubefit/kubefit
-
-Or tap first:
-
     brew tap BGilleran522/kubefit
+    brew trust BGilleran522/kubefit
     brew install kubefit
+
+Homebrew 7 requires third-party taps to be trusted explicitly; without
+`brew trust` the install stops with "Refusing to load formula ... from
+untrusted tap".
 
 ## Getting started
 
