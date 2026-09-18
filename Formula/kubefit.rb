@@ -4,14 +4,14 @@ class Kubefit < Formula
 
   if OS.mac?
     # Universal: one archive covers Apple silicon and Intel.
-    url "https://github.com/BGilleran522/homebrew-kubefit/releases/download/v0.1.0/kubefit-v0.1.0.zip"
-    sha256 "6763759ea160653ebb1f5be3587a52a8d79175346bd46065b7afa3c0756ede5d"
+    url "https://github.com/BGilleran522/homebrew-kubefit/releases/download/v0.1.1/kubefit-v0.1.1.zip"
+    sha256 "bfd431b6a0aeacfb30247f9f688a87bfd48fe001496af0ffb193721be65f5151"
   elsif Hardware::CPU.intel?
-    url "https://github.com/BGilleran522/homebrew-kubefit/releases/download/v0.1.0/kubefit-v0.1.0-linux-amd64.tar.gz"
-    sha256 "cd0c486291aa002e49d6204703a7e2377ee21478ee9b904a6caab8c986e565fd"
+    url "https://github.com/BGilleran522/homebrew-kubefit/releases/download/v0.1.1/kubefit-v0.1.1-linux-amd64.tar.gz"
+    sha256 "6d9c15727626d6a2e80141cb57069cbca8f7a19a403ba0fb0f0a298b12f6be7f"
   else
-    url "https://github.com/BGilleran522/homebrew-kubefit/releases/download/v0.1.0/kubefit-v0.1.0-linux-arm64.tar.gz"
-    sha256 "c44ef9e008164c4f4da1f1c8f9c4df99f3e764e51961e28924bf8ca2e8b28968"
+    url "https://github.com/BGilleran522/homebrew-kubefit/releases/download/v0.1.1/kubefit-v0.1.1-linux-arm64.tar.gz"
+    sha256 "506f39cd080944f153a34d84a6f2dcde8116b519b3074b0ecae9eff1bd59b712"
   end
 
   def install

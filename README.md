@@ -17,7 +17,7 @@ untrusted tap".
 
     ARCH=$(uname -m)
     case "$ARCH" in x86_64) A=amd64 ;; aarch64|arm64) A=arm64 ;; esac
-    curl -fsSL "https://github.com/BGilleran522/homebrew-kubefit/releases/download/v0.1.0/kubefit-v0.1.0-linux-$A.tar.gz" \
+    curl -fsSL "https://github.com/BGilleran522/homebrew-kubefit/releases/download/v0.1.1/kubefit-v0.1.1-linux-$A.tar.gz" \
       | sudo tar -xz -C /usr/local/bin kubefit
 
 The Linux binaries are statically linked, so they run on glibc and musl alike.
